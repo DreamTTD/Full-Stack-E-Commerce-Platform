@@ -1,0 +1,20 @@
+{
+  "name": "commerce-mobile-platform-api",
+  "version": "1.0.0",
+  "description": "Demo Node.js API for a mobile-first e-commerce platform with checkout, payments, and admin controls.",
+  "main": "app.js",
+  "scripts": {
+    "dev": "node app.js",
+    "start": "node app.js",
+    "check": "node --check app.js"
+  },
+  "keywords": [
+    "e-commerce",
+    "node",
+    "stripe",
+    "postgresql",
+    "flutter"
+  ],
+  "license": "MIT",
+  "dependencies": {}
+}

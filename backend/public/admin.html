@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Commerce Admin</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <aside class="sidebar">
+      <strong>Commerce Admin</strong>
+      <nav>
+        <a href="#overview">Overview</a>
+        <a href="#products">Products</a>
+        <a href="#orders">Orders</a>
+      </nav>
+    </aside>
+
+    <main>
+      <section id="overview" class="toolbar">
+        <div>
+          <p class="eyebrow">Mobile Platform</p>
+          <h1>Store Control Center</h1>
+        </div>
+        <button id="refresh">Refresh</button>
+      </section>
+
+      <section class="metrics" aria-label="Store metrics">
+        <article>
+          <span>Revenue</span>
+          <strong id="revenue">$0</strong>
+        </article>
+        <article>
+          <span>Orders</span>
+          <strong id="ordersCount">0</strong>
+        </article>
+        <article>
+          <span>Products</span>
+          <strong id="productsCount">0</strong>
+        </article>
+        <article>
+          <span>Low Stock</span>
+          <strong id="lowStock">0</strong>
+        </article>
+      </section>
+
+      <section id="products">
+        <div class="section-title">
+          <h2>Product Catalog</h2>
+          <span>Live inventory</span>
+        </div>
+        <div id="productsGrid" class="grid"></div>
+      </section>
+
+      <section id="orders">
+        <div class="section-title">
+          <h2>Orders</h2>
+          <span>Paid checkout stream</span>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Order</th>
+                <th>Customer</th>
+                <th>Total</th>
+                <th>Status</th>
+                <th>Date</th>
+              </tr>
+            </thead>
+            <tbody id="ordersTable"></tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
